@@ -1,14 +1,16 @@
-
+var mouse;
 var w = window.innerWidth;
 var h = window.innerHeight;
 var axiom = "FBFBFBFB";
-var len = 10;
+var lf = 40;
+var lb=20/Math.sqrt(2);
 var sentence = axiom;
 var angle;
 
 // variables: FAB
 // axiom: FBFBFBFB
-// rules: F-> FF+[+F-F-F]-[-F+F+F]
+// rules: A->AFBFA
+//        B->AFBFBFBFA
 
 var rules = [];
 rules[0] = {
@@ -21,46 +23,58 @@ rules[1] = {
 }
  
 function setup() {
+	frameRate(15);
+	//createCanvas(400,400);
     createCanvas(w,h);
 	background('#151c19');
 	turtle();
 	angle = radians(45);
-	// for (i = 0; i < 4; i++){
-	// 	generate();
-	// }
-	generate();
+	for(var i=0;i<1;i++){
+	generate();}
 }
 
 function turtle(){
 	resetMatrix();
-	translate(width/2, height);
+	translate(width/2, height/2);
 	for (var i = 0; i < sentence.length; i++){
 		var current = sentence.charAt(i);
 		if (current == "F"){
-			stroke("yellow");
-			line(mouseX,mouseX, mouseX, mouseY-len);
-			translate(mouseX, mouseY-len);
-		}else if (current == "A"){
 			stroke("green");
-			noFill();push();
-			arc(mouseX,mouseY,10,10,0,radians(90));pop();
-		}else if (current == "B"){
-			 stroke("red");
-			 var l=5/Math.sqrt(2);
-			line(mouseX,mouseY, mouseX, mouseY-l);
-			translate(mouseX, mouseY-l);
+			line(mouseX,mouseY, mouseX, mouseY-lf);
+			translate(mouseX, mouseY-lf);
+		}
+		else if (current == "A"){
 			stroke("blue");
-			noFill();push();
-			arc(mouseX,mouseY,l,l,0,radians(270));pop();
-			line(mouseX,mouseY, mouseX, mouseY-l);
-			translate(mouseX, mouseY-l);
+			for(var a=0;a>radians(-90);a-=0.05){
+				var r=lf;
+				var x=r*cos(a);
+				var y=r*sin(a);
+				//point(x-r,y);
+			}
+			translate(x-r,y);
+			rotate(radians(-90));
+		}
+		else if (current == "B"){
+			stroke("red");
+			line(mouseX,mouseY, mouseX, mouseY-lb);
+			translate(mouseX, mouseY-lb);
+			for(var a=0;a>radians(-270);a-=0.05){
+				var r=lb;
+				var x=r*cos(a);
+				var y=r*sin(a);
+				point(x-r,y);
+			}
+			translate(x,y);
+			rotate(radians(-270));
+			line(x,y, x, y-lb);
+			translate(x, y-lb);
 		}
 	}
 }
 
 
 function generate(){
-	len *= .5;
+	//len *= .5;
 	var nextSentence = "";
 	for (var i = 0; i < sentence.length; i++){
 		var current = sentence.charAt(i);
