@@ -25,7 +25,7 @@ Second Derivation: g g G G f g G G f f g g G G f g G G f f
 <tr><td rowspan="4">B</td><td>
   Calculate forward units l = 10/sqrt (2)<br>
   Move forward l Units<br>
-  Draw an arc adius l units upto 270 degrees<br>
+  Draw an arc of radius l units upto 270 degrees<br>
  Forward l Units</td>
   </table>
   
