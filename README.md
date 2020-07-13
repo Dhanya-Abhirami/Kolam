@@ -34,9 +34,12 @@ Second Derivation: g g G G f g G G f f g g G G f g G G f f
   
 ## References
 [Wikipedia](https://en.wikipedia.org/wiki/L-system) <br>
-[Similar One](https://imaginary.org/film/mathlapse-l-system-for-single-knot-kolam-pattern-generation) <br>
-[An Example](https://gist.github.com/jhubley/3cc23bf95bb5acaaad09152878a13d3b) <br>
-
+[Graphical modeling](http://algorithmicbotany.org/papers/abop/abop-ch1.pdf) <br>
+[Research Paper 1](https://www.researchgate.net/publication/295258996_A_View_of_India_Through_Kolam_Patterns_and_Their_Grammatical_Representation) <br>
+[Research Paper 2](https://www.semanticscholar.org/paper/Application-of-L-Systems-to-Algorithmic-Generation-Prusinkiewicz-Krithivasan/940ea81d742a5b8e690bce367ee4981bb6dbba60) <br>
+[Example 1](https://imaginary.org/film/mathlapse-l-system-for-single-knot-kolam-pattern-generation) <br>
+[Example 2](https://gist.github.com/jhubley/3cc23bf95bb5acaaad09152878a13d3b) <br>
+[Example 3](https://users.math.yale.edu/public_html/People/frame/Fractals/Panorama/Art/Kolams/Kolams.html)
 ## Support Me!
 * If you :heart: my project, please give it a :star: .
 * Feel free to give me more grammars for Kolam generation
