@@ -31,12 +31,12 @@ function setup() {
 function draw(){
 	for (var layers = 0; layers < 3; layers++){
 		turtle(sentence);
-		console.log(layers);
+		// console.log(layers);
 		sentence = generate(sentence);
 	}
 }
 function turtle(sentence){
-	console.log('turtle');
+	// console.log('turtle');
 	resetMatrix();
 	translate(width/2, height/2);
 	for (var i = 0; i < sentence.length; i++){
@@ -80,8 +80,7 @@ function turtle(sentence){
 
 
 function generate(){
-	//len *= .5;
-	console.log('generate');
+	// console.log('generate');
 	var nextSentence = "";
 	for (var i = 0; i < sentence.length; i++){
 		var current = sentence.charAt(i);
