@@ -1,6 +1,6 @@
  [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
- # Kolam :snowflake:
+ # Kolam ⌘:
  Kolam is a class of patterns drawn using lines, curves and dots. Made of rice flour or chalk, Kolams are a welcome sight in the courtyards of homes in South India.
 ## Lo Behold!
 ![alt tag](https://github.com/Dhanya-Abhirami/Kolam-Generator/blob/master/output.png)
