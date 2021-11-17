@@ -42,6 +42,10 @@ Second Derivation: g g G G f g G G f f g g G G f g G G f f
 [Example 1](https://imaginary.org/film/mathlapse-l-system-for-single-knot-kolam-pattern-generation) <br>
 [Example 2](https://gist.github.com/jhubley/3cc23bf95bb5acaaad09152878a13d3b) <br>
 [Example 3](https://users.math.yale.edu/public_html/People/frame/Fractals/Panorama/Art/Kolams/Kolams.html)
+
+## Lightning Talk
+This project was presented at [PySangamam 2018](https://youtu.be/Gjgq2Ge05uA?t=397)
+
 ## Support Me!
 * If you :heart: my project, please give it a :star: .
 * Feel free to give me more grammars for Kolam generation
